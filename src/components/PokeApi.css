@@ -1,0 +1,9 @@
+.PokeContainer{
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.PokeContainer{
+    @apply flex flex-row flex-wrap justify-center h-screen w-screen overflow-y-auto;
+}
