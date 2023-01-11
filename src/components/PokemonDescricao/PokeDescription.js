@@ -25,7 +25,6 @@ const PokeDescription = () => {
   //Pokemons Types
   const TakeType = pokemonData.types?.map((type) => type.type.name);
 
-
   useEffect(() => {
     axios.get(`https://pokeapi.co/api/v2/pokemon/${id ? id.id : null}`)
       .then(response => {
@@ -43,16 +42,14 @@ const PokeDescription = () => {
   )
   const MainImgArtwork = pokemonData.sprites.other["official-artwork"].front_default;
 
-
   return (
     <div className={"PokeDescriptionContainer"}
          style={{backgroundColor: `${pokemonTypesColors[TakeType[0]]}`}}>
       <DescriptionHeader id={id} PokeDate={pokemonData}/>
-      <div className={"ImgDIv"}>
-        <div className={"imgCOntent"}>
+      <div className={"SectMainImg"}>
+        <div className={"ImgContent"}>
           <img src={MainImgArtwork} alt={pokemonData.name} className={"MainImg"}/>
         </div>
-
       </div>
       <div className={"DescriptionSect"} >
         <section className={"DescriptBtnSec"}>

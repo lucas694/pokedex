@@ -5,19 +5,19 @@ import "./PokeApi.css"
 
 const PokeApi = () => {
   const [pokemon, setPokemon] = useState([]);
+  const [loading, setLoading] = useState(true);
   let artwork = pokemon.map((pokemon) => pokemon.data.sprites.other["official-artwork"].front_default);
   useEffect(() => {
     const getPokemons = () =>{
       let Url = [];
-      for (let i = 1; i <= 151; i++) {
+      for (let i = 1; i <= 500; i++) {
         Url.push(`https://pokeapi.co/api/v2/pokemon/${i}`);
       }
-      let response = axios.all(Url.map((Url) => axios.get(Url))).then((response) => setPokemon(response));
+      let response = axios.all(Url.map((Url) => axios.get(Url))).then((response) => setPokemon(response) );
     }
     getPokemons();
   }, []);
-
-  console.log(pokemon);
+  {}
 
   return(
     <div className={"PokeContainer"}>

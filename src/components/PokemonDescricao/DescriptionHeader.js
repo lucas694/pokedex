@@ -11,7 +11,7 @@ const DescriptionHeader = ( props)=>{
   const FixName = PokeDate.name.charAt(0).toUpperCase() + PokeDate.name.slice(1)
   const TakeType = PokeDate.types?.map((type) => type.type.name) ;
   const TypeName = TakeType.map((type) => type.charAt(0).toUpperCase() + type.slice(1))
-
+console.log(TypeName)
   return(
     <div className={"DescHeaderContainer"}>
       <div className={"DescHeaderMain"}>
@@ -24,7 +24,11 @@ const DescriptionHeader = ( props)=>{
       <span className={"HeaderId"}>{IdValidate}</span>
       </div>
       <div className={"DescHeaderTypes"}>
-        <span className={"HeaderTypeNames"}>{TypeName}</span>
+        {TypeName.map((type)=>{
+          return(
+            <span className={"HeaderTypeNames"}>{type}</span>
+          )
+        })}
       </div>
     </div>
   )

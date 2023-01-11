@@ -1,5 +1,5 @@
 .DescHeaderContainer{
-    @apply flex flex-col w-full px-4 py-4 z-40
+    @apply flex flex-col w-full px-4 py-4 z-40 mt-4
 }
 .DescHeaderMain{
     @apply flex flex-row justify-between items-center w-full

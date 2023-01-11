@@ -22,10 +22,6 @@ const PokemonStats = (props) => {
   const StatsName = pokemonData.stats?.map((stats) => stats.stat.name);
   const StatsValue = pokemonData.stats?.map((stats) => stats.base_stat);
 
-
-
-    console.log(pokemonData)
-
     const AllStats = [
     {Name: StatNameDictionary.hp, Value: StatsValue[0] , Color: StatColorDictionary.hp},
     {Name: StatNameDictionary.attack, Value: StatsValue[1], Color: StatColorDictionary.attack},

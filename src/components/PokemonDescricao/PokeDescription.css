@@ -3,13 +3,13 @@
 }
 
 .DescriptionSect{
-    @apply bg-white h-[60%] w-full flex flex-col rounded-t-[12%] items-center px-4 z-0
+    @apply bg-white h-[55%] w-full flex flex-col rounded-t-[12%] items-center px-4
 }
 .DescriptBtnSec{
     @apply flex flex-row justify-center w-full
 }
 .BtnDesc{
-    @apply w-full h-[40%] py-4 my-2 mx-1 font-medium text-gray-500 mt-20 text-sm
+    @apply w-full h-[20%] pb-2 my-2 mx-1 font-medium text-gray-500 mt-20 text-sm
     flex flex-col justify-center items-center
 }
 
@@ -23,9 +23,10 @@
 .MainImg{
     @apply  object-contain z-10
 }
-.ImgDIv{
-    @apply z-10 flex justify-center items-center z-20 w-full  absolute top-8
+.SectMainImg{
+    @apply flex justify-center items-center w-full absolute top-20 z-20 overflow-hidden
+    sm:top-10
 }
-.imgCOntent{
-    @apply w-[90%]
+.ImgContent{
+    @apply w-[80%] h-[80%] z-20 flex justify-center items-center
 }
