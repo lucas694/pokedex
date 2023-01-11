@@ -1,0 +1,13 @@
+.MoveContainer{
+    @apply flex flex-wrap justify-center
+}
+.MovesContent{
+    @apply flex justify-around flex-row flex-wrap mt-4 overflow-visible
+}
+
+.MoveValue{
+    @apply p-4 w-[45%] rounded-full mb-8 justify-around
+}
+.MoveName{
+    @apply text-center font-bold text-white
+}

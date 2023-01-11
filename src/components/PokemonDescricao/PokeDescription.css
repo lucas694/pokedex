@@ -1,0 +1,31 @@
+.PokeDescriptionContainer{
+    @apply flex flex-col justify-between h-screen w-full
+}
+
+.DescriptionSect{
+    @apply bg-white h-[60%] w-full flex flex-col rounded-t-[12%] items-center px-4 z-0
+}
+.DescriptBtnSec{
+    @apply flex flex-row justify-center w-full
+}
+.BtnDesc{
+    @apply w-full h-[40%] py-4 my-2 mx-1 font-medium text-gray-500 mt-20 text-sm
+    flex flex-col justify-center items-center
+}
+
+.BtnDesc:hover{
+    @apply border-b-2 text-gray-800
+}
+
+.DescriptionStats{
+    @apply w-full overflow-scroll
+}
+.MainImg{
+    @apply  object-contain z-10
+}
+.ImgDIv{
+    @apply z-10 flex justify-center items-center z-20 w-full  absolute top-8
+}
+.imgCOntent{
+    @apply w-[90%]
+}
