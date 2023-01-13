@@ -6,6 +6,7 @@ import "./PokeApi.css"
 const PokeApi = () => {
   const [pokemon, setPokemon] = useState([]);
   const [loading, setLoading] = useState(true);
+  const PokemonsNames = pokemon.map((pokemon) => pokemon.data.name);
   let artwork = pokemon.map((pokemon) => pokemon.data.sprites.other["official-artwork"].front_default);
   useEffect(() => {
     const getPokemons = () =>{
@@ -17,10 +18,10 @@ const PokeApi = () => {
     }
     getPokemons();
   }, []);
-  {}
 
   return(
     <div className={"PokeContainer"}>
+      <div className={"PokeContent"}>
       {pokemon.map((pokemon) => (
         <PokemonCards key={pokemon.data.id}
                       PokemonName={pokemon.data.name}
@@ -28,6 +29,7 @@ const PokeApi = () => {
                       PokeId={pokemon.data.id}
         />
         ))}
+      </div>
     </div>
   )
 };export default PokeApi

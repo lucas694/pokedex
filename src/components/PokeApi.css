@@ -3,7 +3,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @apply flex flex-col
 }
-.PokeContainer{
+.PokeContent{
     @apply flex flex-row flex-wrap justify-center h-screen w-screen overflow-y-auto;
 }

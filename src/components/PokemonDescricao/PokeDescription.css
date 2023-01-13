@@ -10,7 +10,7 @@
 }
 .BtnDesc{
     @apply w-full h-[20%] pb-2 my-2 mx-1 font-medium text-gray-500 mt-24 text-sm
-    flex flex-col justify-center items-center
+    flex flex-col justify-center items-center 
 }
 
 .BtnDesc:hover{
@@ -24,7 +24,7 @@
     @apply  object-contain z-10
 }
 .SectMainImg{
-    @apply flex justify-center items-center w-full absolute top-20 z-20 overflow-hidden
+    @apply flex justify-center items-center w-full absolute top-[4.5rem] z-20 overflow-hidden
     sm:top-10
 }
 .ImgContent{

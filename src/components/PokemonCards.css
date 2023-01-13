@@ -12,7 +12,7 @@
     @apply text-lg font-semibold pb-4
 }
 .PokeImgCard{
-    @apply h-[9em] w-[9em]
-        md:h-[9em] md:w-[9em]
+    @apply h-[8em] w-[8em]
+    md:h-[9em] md:w-[9em]
     sm:h-[7em] sm:w-[7em]
 }
